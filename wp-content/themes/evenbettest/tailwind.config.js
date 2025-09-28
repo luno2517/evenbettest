@@ -9,18 +9,22 @@ const config = {
     'max-w-[768px]',
     'lg:max-w-[696px]',
     'lg:max-w-[768px]',
+    'pt-2.5',
     'pt-6',
     'pt-12.5',
     'pt-15',
     'pt-18.75',
+    'lg:pt-2.5',
     'lg:pt-12.5',
     'lg:pt-25',
     'lg:pt-30',
     'lg:pt-37.5',
+    'pb-2.5',
     'pb-6',
     'pb-12.5',
     'pb-15',
     'pb-18.75',
+    'lg:pb-2.5',
     'lg:pb-12.5',
     'lg:pb-25',
     'lg:pb-30',
@@ -42,6 +46,7 @@ const config = {
     'bg-[#7c37a1]',
     'bg-[#e77bff]',
     'bg-[#632784]',
+    'bg-[#27003a]',
   ],
   theme: {
     extend: {
@@ -76,6 +81,7 @@ const config = {
         'evenbettest-purple-dark': '#27003A',
         'evenbettest-purple-alt': '#632784',
         'evenbettest-purple-alt-2': '#3C0F59',
+        'evenbettest-purple-text': '#5A0F7F',
         'evenbettest-emerald': '#2AD0B7',
         'evenbettest-emerald-light': '#04A696',
         'evenbettest-pink': '#E77BFF',
@@ -179,6 +185,9 @@ const config = {
         '5px': '5px',
         '7px': '7px',
       },
+      screens: {
+        'extra-xl': '1900px',
+      },
     },
   },
   plugins: [
@@ -197,6 +206,9 @@ const config = {
           },
         },
         '.container-large': {
+          '@screen lg': {
+            maxWidth: 'none',
+          },
           '@screen xl': {
             maxWidth: '1920px',
           },

@@ -74,6 +74,10 @@ function evenbettest_get_padding_classes($top = 'none', $bottom = 'none') {
 
     // Rem values for tailwind classes
     $rem_values = [
+        '10px' => [
+            'desktop' => '2.5',
+            'mobile' => '6',
+        ],
         '50px' => [
             'desktop' => '12.5',
             'mobile' => '6',

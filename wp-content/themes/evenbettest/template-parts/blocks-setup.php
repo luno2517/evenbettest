@@ -15,6 +15,7 @@ function register_acf_blocks()
 {
     register_block_type(__DIR__ . '/blocks/cards-basic');
     register_block_type(__DIR__ . '/blocks/decoration-basic');
+    register_block_type(__DIR__ . '/blocks/hero-decorated');
 }
 add_action('init', 'register_acf_blocks');
 

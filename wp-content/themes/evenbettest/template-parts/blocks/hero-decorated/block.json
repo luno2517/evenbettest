@@ -1,0 +1,11 @@
+{
+  "name": "acf/hero-decorated",
+  "title": "Hero Decorated",
+  "description": "Hero Decorated block.",
+  "category": "evenbettest",
+  "icon": "format-image",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "hero-decorated.php"
+  }
+}

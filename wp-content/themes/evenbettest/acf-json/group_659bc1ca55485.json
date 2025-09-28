@@ -41,6 +41,7 @@
             },
             "choices": {
                 "none": "none",
+                "10px": "10px",
                 "50px": "50px",
                 "100px": "100px",
                 "120px": "120px",
@@ -67,6 +68,7 @@
             },
             "choices": {
                 "none": "none",
+                "10px": "10px",
                 "50px": "50px",
                 "100px": "100px",
                 "120px": "120px",
@@ -114,5 +116,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759059879
+    "modified": 1759060722
 }

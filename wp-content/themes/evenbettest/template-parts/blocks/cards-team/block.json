@@ -1,0 +1,11 @@
+{
+  "name": "acf/cards-team",
+  "title": "Cards Team",
+  "description": "Cards Team block.",
+  "category": "evenbettest",
+  "icon": "screenoptions",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cards-team.php"
+  }
+}

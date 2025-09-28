@@ -1,32 +1,9 @@
 {
-    "key": "group_65fc3b5a80775",
-    "title": "Block: Cards Testimonials",
+    "key": "group_68d9bfd802119",
+    "title": "Block: Cards Team",
     "fields": [
         {
-            "key": "field_686e71e67fc6e",
-            "label": "Stars?",
-            "name": "stars",
-            "aria-label": "",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "yes": "yes",
-                "no": "no"
-            },
-            "default_value": "yes",
-            "return_format": "value",
-            "allow_null": 0,
-            "layout": "horizontal"
-        },
-        {
-            "key": "field_66f19fc217d41",
+            "key": "field_68d9bfd811df2",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -46,7 +23,7 @@
             "append": ""
         },
         {
-            "key": "field_65fc3b5a90059",
+            "key": "field_68d9bfd8158e5",
             "label": "Columns",
             "name": "columns",
             "aria-label": "",
@@ -70,7 +47,7 @@
             "layout": "horizontal"
         },
         {
-            "key": "field_65fc3b5a93ce0",
+            "key": "field_68d9bfd8193d7",
             "label": "Cards",
             "name": "cards",
             "aria-label": "",
@@ -92,7 +69,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_65fc3b5aa3018",
+                    "key": "field_68d9bfd820d43",
                     "label": "Image",
                     "name": "image",
                     "aria-label": "",
@@ -115,37 +92,10 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_65fc3b5a93ce0"
+                    "parent_repeater": "field_68d9bfd8193d7"
                 },
                 {
-                    "key": "field_66f19f898bc58",
-                    "label": "Stars",
-                    "name": "stars",
-                    "aria-label": "",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "1": "1",
-                        "2": "2",
-                        "3": "3",
-                        "4": "4",
-                        "5": "5"
-                    },
-                    "default_value": 5,
-                    "return_format": "value",
-                    "allow_null": 0,
-                    "layout": "horizontal",
-                    "parent_repeater": "field_65fc3b5a93ce0"
-                },
-                {
-                    "key": "field_65fc3b5aa6b1c",
+                    "key": "field_68d9bfd824825",
                     "label": "Title",
                     "name": "title",
                     "aria-label": "",
@@ -163,33 +113,12 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_65fc3b5a93ce0"
+                    "parent_repeater": "field_68d9bfd8193d7"
                 },
                 {
-                    "key": "field_65fc3b73b37b0",
-                    "label": "Content",
-                    "name": "content",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0,
-                    "parent_repeater": "field_65fc3b5a93ce0"
-                },
-                {
-                    "key": "field_65fc3b7db37b1",
-                    "label": "Author",
-                    "name": "author",
+                    "key": "field_68d9bfd828290",
+                    "label": "Position",
+                    "name": "position",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -205,28 +134,7 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_65fc3b5a93ce0"
-                },
-                {
-                    "key": "field_66f19f9c8bc59",
-                    "label": "Date",
-                    "name": "date",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_65fc3b5a93ce0"
+                    "parent_repeater": "field_68d9bfd8193d7"
                 }
             ]
         }
@@ -236,7 +144,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cards-testimonials"
+                "value": "acf\/cards-team"
             }
         ]
     ],
@@ -249,5 +157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752068725
+    "modified": 1759101007
 }

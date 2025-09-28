@@ -96,7 +96,6 @@
     .swiper-next,
     .pagination-prev,
     .pagination-next {
-        @apply transition-all ease-in bg-white w-[56px] h-[56px] rounded-full text-evenbettest-dark-blue;
         @apply flex items-center justify-center hover:cursor-pointer;
 
         &.swiper-button-disabled{

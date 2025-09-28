@@ -86,6 +86,7 @@ const config = {
         'evenbettest-emerald': '#2AD0B7',
         'evenbettest-emerald-light': '#04A696',
         'evenbettest-pink': '#E77BFF',
+        'evenbettest-pink-light': '#E44EFF',
       },
       spacing: {
         7.5: '30px',
@@ -204,6 +205,11 @@ const config = {
           },
           '@screen lg': {
             maxWidth: '1180px',
+          },
+        },
+        '.container-small': {
+          '@screen lg': {
+            maxWidth: '980px',
           },
         },
         '.container-large': {

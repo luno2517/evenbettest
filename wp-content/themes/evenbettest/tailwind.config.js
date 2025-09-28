@@ -41,6 +41,7 @@ const config = {
     'bg-[#3d0f58]',
     'bg-[#7c37a1]',
     'bg-[#e77bff]',
+    'bg-[#632784]',
   ],
   theme: {
     extend: {
@@ -193,6 +194,11 @@ const config = {
           },
           '@screen lg': {
             maxWidth: '1180px',
+          },
+        },
+        '.container-large': {
+          '@screen xl': {
+            maxWidth: '1920px',
           },
         },
       });

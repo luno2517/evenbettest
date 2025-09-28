@@ -14,6 +14,7 @@ add_filter('block_categories_all', function($categories) {
 function register_acf_blocks()
 {
     register_block_type(__DIR__ . '/blocks/cards-basic');
+    register_block_type(__DIR__ . '/blocks/decoration-basic');
 }
 add_action('init', 'register_acf_blocks');
 

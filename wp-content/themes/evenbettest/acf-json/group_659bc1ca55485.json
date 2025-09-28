@@ -3,6 +3,29 @@
     "title": "Settings",
     "fields": [
         {
+            "key": "field_68d91f2e4d627",
+            "label": "Container Size",
+            "name": "container_size",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "regular": "regular",
+                "large": "large"
+            },
+            "default_value": "regular",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
             "key": "field_657b1236234d1",
             "label": "Padding top",
             "name": "padding_top",
@@ -77,8 +100,8 @@
         [
             {
                 "param": "block",
-                "operator": "!=",
-                "value": "acf\/banner-basic"
+                "operator": "==",
+                "value": "all"
             }
         ]
     ],
@@ -91,5 +114,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758992765
+    "modified": 1759059879
 }

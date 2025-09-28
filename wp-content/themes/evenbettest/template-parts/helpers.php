@@ -59,8 +59,12 @@ function evenbettest_get_default_section_classes($decoration = []) {
     return $class_names;
 }
 
-function evenbettest_get_container_classes() {
-    return 'container';
+function evenbettest_get_container_classes($container_size = 'regular') {
+    if (empty($container_size)) {
+        return 'container';
+    }
+
+    return 'container container-' . $container_size;
 }
 
 function evenbettest_get_padding_classes($top = 'none', $bottom = 'none') {

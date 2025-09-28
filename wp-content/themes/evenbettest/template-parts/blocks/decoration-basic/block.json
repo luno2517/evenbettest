@@ -1,0 +1,11 @@
+{
+  "name": "acf/decoration-basic",
+  "title": "Decoration Basic",
+  "description": "Decoration Basic block.",
+  "category": "quper",
+  "icon": "image-filter",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "decoration-basic.php"
+  }
+}

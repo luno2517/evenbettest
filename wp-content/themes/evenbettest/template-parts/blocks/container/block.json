@@ -1,0 +1,11 @@
+{
+  "name": "acf/container",
+  "title": "Container",
+  "description": "Container block.",
+  "category": "quper",
+  "icon": "format-aside",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "container.php"
+  }
+}

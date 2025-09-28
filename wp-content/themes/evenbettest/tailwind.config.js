@@ -47,6 +47,7 @@ const config = {
     'bg-[#e77bff]',
     'bg-[#632784]',
     'bg-[#27003a]',
+    'mb-10',
   ],
   theme: {
     extend: {

@@ -1,0 +1,41 @@
+# Node
+node_modules/
+
+# IDE
+## Phpstorm project files
+.idea
+
+# Wordpress
+wp-config.php
+/wp-content/updraft/*
+/wp-content/cache/*
+/wp-content/uploads/*
+
+# Log, backup, htaccess, debug
+.htaccess*
+*.log
+*_log
+*_errorlog
+
+# Archive
+*.dt
+*.tar*
+*.gz*
+*.tgz
+*.zip
+*.rar
+*.dat
+*.7z
+*.tmp
+
+# Db
+*.sql
+*.xml
+*.db
+*.csv
+adminer*.php
+
+# Hosting files
+/cgi-bin/
+/.well-known/
+.ftpquota

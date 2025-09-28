@@ -1,0 +1,11 @@
+{
+  "name": "acf/cards-basic",
+  "title": "Cards Basic",
+  "description": "Cards Basic block.",
+  "category": "quper",
+  "icon": "screenoptions",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cards-basic.php"
+  }
+}

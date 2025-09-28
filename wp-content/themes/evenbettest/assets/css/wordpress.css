@@ -1,0 +1,18 @@
+.editor-styles-wrapper .wp-block {
+    max-width: none;
+}
+
+.block-editor__container .overflow-hidden.relative img {
+    height: 100%;
+    width: 100%;
+}
+
+.block-editor__container .overflow-hidden.relative img.evenbettest-icon {
+    height: auto;
+    width: auto;
+}
+
+.is-root-container.block-editor-block-list__layout {
+    background-color: #3D0F58;
+    color: #ffffff;
+}

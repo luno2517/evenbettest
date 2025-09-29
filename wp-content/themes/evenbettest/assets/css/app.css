@@ -88,8 +88,8 @@
     }
 
     .btn-primary {
-        @apply flex w-fit shrink-0 bg-evenbettest-emerald-light border-2 border-evenbettest-emerald-light rounded-[70px] overflow-hidden px-7 py-2.5;
-        @apply hover:bg-transparent hover:text-evenbettest-emerald-light;
+        @apply !flex !w-fit !shrink-0 !bg-evenbettest-emerald-light !border-2 !border-evenbettest-emerald-light !rounded-[70px] !overflow-hidden !px-7 !py-2.5;
+        @apply hover:!bg-none hover:!bg-transparent hover:!text-evenbettest-emerald-light hover:!border-2 hover:!border-evenbettest-emerald-light;
     }
 
     .swiper-prev,

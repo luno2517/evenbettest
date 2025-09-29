@@ -18,6 +18,7 @@ function register_acf_blocks()
     register_block_type(__DIR__ . '/blocks/cards-team');
     register_block_type(__DIR__ . '/blocks/container');
     register_block_type(__DIR__ . '/blocks/decoration-basic');
+    register_block_type(__DIR__ . '/blocks/form-basic');
     register_block_type(__DIR__ . '/blocks/hero-decorated');
 }
 add_action('init', 'register_acf_blocks');
@@ -33,6 +34,9 @@ function enqueue_blocks_assets($post) {
     if (enhanced_has_block('acf/cards-team', $post)) {
         wp_enqueue_script('swiper-js', ASSETS_DIR . '/lib/swiper/swiper-bundle.min.js');
         wp_enqueue_style('swiper-css', ASSETS_DIR . '/lib/swiper/swiper-bundle.min.css');
+    }
+    if (enhanced_has_block('acf/form-basic', $post)) {
+        wp_enqueue_style('wpforms-css', ASSETS_DIR . '/css/wpforms.css', [], filemtime(ASSETS_DIR_PLAIN . '/css/wpforms.css'));
     }
 }
 add_action('enqueue_block_assets', 'enqueue_blocks_assets');

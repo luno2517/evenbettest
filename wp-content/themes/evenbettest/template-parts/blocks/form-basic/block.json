@@ -1,0 +1,11 @@
+{
+  "name": "acf/form-basic",
+  "title": "Form Basic",
+  "description": "Form Basic block.",
+  "category": "quper",
+  "icon": "text-page",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "form-basic.php"
+  }
+}

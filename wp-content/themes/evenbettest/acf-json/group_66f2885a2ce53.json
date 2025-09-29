@@ -23,49 +23,6 @@
             "append": ""
         },
         {
-            "key": "field_66f289cde035d",
-            "label": "Title Size",
-            "name": "title_size",
-            "aria-label": "",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "h1": "h1",
-                "h2": "h2"
-            },
-            "default_value": "h2",
-            "return_format": "value",
-            "allow_null": 0,
-            "layout": "horizontal"
-        },
-        {
-            "key": "field_66f289dae035e",
-            "label": "Content",
-            "name": "content",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
             "key": "field_66f2885aca53b",
             "label": "Form Id",
             "name": "form_id",
@@ -86,29 +43,6 @@
             "step": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_6859916d3cbc2",
-            "label": "Wide Container?",
-            "name": "wide_container",
-            "aria-label": "",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "no": "no",
-                "yes": "yes"
-            },
-            "default_value": "no",
-            "return_format": "value",
-            "allow_null": 0,
-            "layout": "horizontal"
         }
     ],
     "location": [
@@ -129,5 +63,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1750700436
+    "modified": 1759106114
 }

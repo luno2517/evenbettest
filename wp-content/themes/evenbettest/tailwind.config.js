@@ -48,6 +48,7 @@ const config = {
     'bg-[#632784]',
     'bg-[#27003a]',
     'mb-10',
+    'col-span-2',
   ],
   theme: {
     extend: {
@@ -205,6 +206,11 @@ const config = {
           },
           '@screen lg': {
             maxWidth: '1180px',
+          },
+        },
+        '.container-extra-small': {
+          '@screen lg': {
+            maxWidth: '892px',
           },
         },
         '.container-small': {

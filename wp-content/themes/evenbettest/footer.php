@@ -273,5 +273,34 @@ $mobile_nav = get_field('mobile_nav', 'option');
         });
     </script>
 <?php endif;?>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let formDataCache = {};
+
+        jQuery('#wpforms-submit-208').on('click', function() {
+            const $form = jQuery(this).closest('form');
+            formDataCache = {
+                name: $form.find('input[name="wpforms[fields][1]"]').val() || '',
+                email: $form.find('input[name="wpforms[fields][2]"]').val() || '',
+                messenger: $form.find('input[name="wpforms[fields][3]"]').val() || '',
+                manager: $form.find('input[name="wpforms[fields][4]"]').val() || '',
+                text: $form.find('textarea[name="wpforms[fields][5]"]').val() || '',
+                checkbox: $form.find('input[name="wpforms[fields][6][]"]').is(':checked') ? 'yes' : 'no'
+            };
+        });
+
+        jQuery(document).on('wpformsAjaxSubmitSuccess', function() {
+            const utms = getUTMParams();
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'formSubmitted',
+                formId: 208,
+                ...formDataCache,
+                ...utms
+            });
+            console.log('formSubmitted pushed to dataLayer', {...formDataCache, ...utms});
+        });
+    });
+</script>
 </body>
 </html>

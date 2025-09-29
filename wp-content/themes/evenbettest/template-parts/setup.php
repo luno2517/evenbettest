@@ -105,6 +105,4 @@ function evenbettest_webhooks($fields, $entry, $form_data, $entry_id) {
         'headers' => ['Content-Type' => 'application/json; charset=utf-8'],
         'body' => wp_json_encode($payload),
     ]);
-
-    file_put_contents(ABSPATH . '/art_log.txt', 'Variable Value: ' . print_r('good', true) . PHP_EOL, FILE_APPEND);
 }

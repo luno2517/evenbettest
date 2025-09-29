@@ -1,0 +1,11 @@
+{
+  "name": "acf/accordion-decorated",
+  "title": "Accordion Decorated",
+  "description": "Accordion Decorated block.",
+  "category": "quper",
+  "icon": "plus",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "accordion-decorated.php"
+  }
+}

@@ -39,11 +39,11 @@ if ($background_color) {
             <?php endif;?>
             <div class="swiper-outer-<?php echo esc_attr($anchor);?>">
                 <div class="absolute left-0 top-[37%] lg:top-[45%] w-full flex items-center justify-between px-5 md:px-0">
-                    <span class="swiper-prev relative z-20 md:left-2 lg:left-6 xl:left-10">
-                        <img src="<?php echo ASSETS_DIR;?>/icons/angle.svg" class="quper-icon !h-8 !w-4 relative right-0.5">
+                    <span class="swiper-prev relative z-20 md:-left-2 lg:-left-6 xl:-left-10">
+                        <img src="<?php echo ASSETS_DIR;?>/icons/angle.svg" class="quper-icon !h-8 !w-4 relative right-0.5 hover:opacity-80">
                     </span>
                     <span class="swiper-next relative z-20 md:left-2 lg:left-6 xl:right-10">
-                        <img src="<?php echo ASSETS_DIR;?>/icons/angle.svg" class="quper-icon !h-8 !w-4 rotate-180 relative left-0.5">
+                        <img src="<?php echo ASSETS_DIR;?>/icons/angle.svg" class="quper-icon !h-8 !w-4 rotate-180 relative left-0.5 hover:opacity-80">
                     </span>
                 </div>
                 <div class="swiper-<?php echo esc_attr($anchor);?> relative flex flex-row items-center justify-center overflow-hidden">

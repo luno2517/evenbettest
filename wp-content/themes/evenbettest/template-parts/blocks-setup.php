@@ -13,6 +13,7 @@ add_filter('block_categories_all', function($categories) {
 
 function register_acf_blocks()
 {
+    register_block_type(__DIR__ . '/blocks/accordion-decorated');
     register_block_type(__DIR__ . '/blocks/cards-basic');
     register_block_type(__DIR__ . '/blocks/cards-team');
     register_block_type(__DIR__ . '/blocks/container');
@@ -26,6 +27,9 @@ function enqueue_blocks_assets($post) {
         $post = get_the_ID();
     }
 
+    if (enhanced_has_block('acf/accordion-decorated', $post)) {
+        wp_enqueue_script('flowbite-js', ASSETS_DIR . '/lib/flowbite/flowbite.min.js');
+    }
     if (enhanced_has_block('acf/cards-team', $post)) {
         wp_enqueue_script('swiper-js', ASSETS_DIR . '/lib/swiper/swiper-bundle.min.js');
         wp_enqueue_style('swiper-css', ASSETS_DIR . '/lib/swiper/swiper-bundle.min.css');

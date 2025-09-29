@@ -1,6 +1,6 @@
 {
     "key": "group_659550d0dfabe",
-    "title": "Block: Accordion Basic",
+    "title": "Block: Accordion Decorated",
     "fields": [
         {
             "key": "field_659551f2d2923",
@@ -87,22 +87,6 @@
                     "parent_repeater": "field_659550d0ec769"
                 }
             ]
-        },
-        {
-            "key": "field_66f3d80a04e97",
-            "label": "Button",
-            "name": "button",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         }
     ],
     "location": [
@@ -110,7 +94,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/accordion-basic"
+                "value": "acf\/accordion-decorated"
             }
         ]
     ],
@@ -123,5 +107,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1727256599
+    "modified": 1759104383
 }

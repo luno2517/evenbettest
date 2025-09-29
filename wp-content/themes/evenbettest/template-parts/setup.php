@@ -89,20 +89,6 @@ function evenbettest_webhooks($fields, $entry, $form_data, $entry_id) {
         ]),
     ]);
 
-    // Email
-    $to = 'artemov1807@gmail.com';
-    $subject = 'New form filled';
-    $headers = ['Content-Type: text/html; charset=UTF-8'];
-
-    $body = "<b>Your full name:</b> $name <br>
-             <b>Your business email:</b> $email <br>
-             <b>Preferred messenger:</b> $messenger <br>
-             <b>Preferred manager:</b> $manager <br>
-             <b>What do you want to discuss:</b> $text <br>
-             <b>I want to receive newsletter with the helpful business content:</b> $checkbox";
-
-    wp_mail($to, $subject, $body, $headers);
-
     // webhook.site
     $webhook_url = 'https://webhook.site/4b719229-9697-4ba4-9db9-592931922da0';
 

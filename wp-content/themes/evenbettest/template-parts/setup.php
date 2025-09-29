@@ -55,3 +55,70 @@ function remove_redirect_guess_404_permalink($redirect_url){
     return $redirect_url;
 }
 add_filter('redirect_canonical', 'remove_redirect_guess_404_permalink');
+
+
+// WPForms webhooks
+add_action('wpforms_process_complete', 'evenbettest_webhooks', 10, 4);
+function evenbettest_webhooks($fields, $entry, $form_data, $entry_id) {
+    if (absint($form_data['id']) !== 208) {
+        return;
+    }
+
+    $name = isset($fields[1]['value']) ? sanitize_text_field($fields[1]['value']) : '';
+    $email = isset($fields[2]['value']) ? sanitize_text_field($fields[2]['value']) : '';
+    $messenger = isset($fields[3]['value']) ? sanitize_text_field($fields[3]['value']) : '';
+    $manager = isset($fields[4]['value']) ? sanitize_text_field($fields[4]['value']) : '';
+    $text = isset($fields[5]['value']) ? sanitize_text_field($fields[5]['value']) : '';
+    $checkbox = isset($fields[6]['value']) ? sanitize_text_field($fields[6]['value']) : '';
+
+    // Telegram
+    $telegram_token = '8284581981:AAFjZY4LMuJ0W6U6yUHa6fFyFv1s_SAXZ5M';
+    $chat_id = '424971378';
+
+    $message = "New form filled:\nYour full name: $name\nYour business email: $email\nPreferred messenger: $messenger\nPreferred manager: $manager\nWhat do you want to discuss: $text\nI want to receive newsletter with the helpful business content: $checkbox";
+
+    $telegram_url = "https://api.telegram.org/bot$telegram_token/sendMessage";
+
+    wp_remote_post($telegram_url, [
+        'headers' => [
+            'Content-Type' => 'application/json; charset=utf-8'
+        ],
+        'body' => wp_json_encode([
+            'chat_id' => $chat_id,
+            'text'    => $message,
+        ]),
+    ]);
+
+    // Email
+    $to = 'artemov1807@gmail.com';
+    $subject = 'New form filled';
+    $headers = ['Content-Type: text/html; charset=UTF-8'];
+
+    $body = "<b>Your full name:</b> $name <br>
+             <b>Your business email:</b> $email <br>
+             <b>Preferred messenger:</b> $messenger <br>
+             <b>Preferred manager:</b> $manager <br>
+             <b>What do you want to discuss:</b> $text <br>
+             <b>I want to receive newsletter with the helpful business content:</b> $checkbox";
+
+    wp_mail($to, $subject, $body, $headers);
+
+    // webhook.site
+    $webhook_url = 'https://webhook.site/4b719229-9697-4ba4-9db9-592931922da0';
+
+    $payload = [
+        'name' => $name,
+        'email' => $email,
+        'messenger' => $messenger,
+        'manager' => $manager,
+        'text' => $text,
+        'checkbox' => $checkbox,
+    ];
+
+    wp_remote_post($webhook_url, [
+        'headers' => ['Content-Type' => 'application/json; charset=utf-8'],
+        'body' => wp_json_encode($payload),
+    ]);
+
+    file_put_contents(ABSPATH . '/art_log.txt', 'Variable Value: ' . print_r('good', true) . PHP_EOL, FILE_APPEND);
+}
